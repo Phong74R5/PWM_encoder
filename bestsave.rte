@@ -1,0 +1,134 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 152400 0 0))
+   (shape (circ I1 152400 0 0))
+   (shape (circ I2 152400 0 0))
+   (shape (circ I3 152400 0 0))
+   (shape (circ I4 152400 0 0))
+   (shape (circ I5 152400 0 0))
+   (shape (circ I6 152400 0 0))
+   (shape (circ I7 152400 0 0))
+   (shape (circ I8 152400 0 0))
+   (shape (circ I9 152400 0 0))
+   (shape (circ I10 152400 0 0))
+   (shape (circ I11 152400 0 0))
+   (shape (circ I12 152400 0 0))
+   (shape (circ I13 152400 0 0))
+   (shape (circ I14 152400 0 0))
+   (shape (circ BOT 152400 0 0))
+  )
+  (padstack PS3
+   (shape (circ BOT 165100 0 0))
+  )
+  )
+  (network_out
+   (Net GND 
+   (rule
+   )
+   (wire (path BOT 30480  -5746000 2274000 -5746000 1746086 -6309975 1746086
+     -6309975 -2008000 -8750000 -2008000)
+    (connect (terminal pin M1-38) (terminal pin J1-1))
+   )
+   (wire (path TOP 30480  -5746000 2274000 -5746000 1625975 -1428000 1625975
+     -1428000 750000)
+    (connect (terminal pin M1-38) (terminal pin M1-18))
+   )
+   (wire (path TOP 30480  -1174000 750000 -1174000 508000 -1428000 508000
+     -1428000 750000)
+    (connect (terminal pin M1-19) (terminal pin M1-18))
+   )
+   )
+   (Net PWM 
+   (rule
+   )
+   (wire (path TOP 30480  -8750000 -1500000 -8750000 -520952 -3460000 -520952
+     -3460000 750000)
+    (connect (terminal pin J1-0) (terminal pin M1-10))
+   )
+   )
+   (Net VCC 
+   (rule
+   )
+   (wire (path TOP 30480  -6000000 2274000 -6000000 1046649 -1682000 1046649
+     -1682000 750000)
+    (connect (terminal pin M1-39) (terminal pin M1-17))
+   )
+   )
+   (Net {NC-1} 
+   (via PS3 -4500000 -1750000 (net {NC-1} )
+    (type protect))
+   )
+   (Net {NC-2} 
+   (via PS3 -4500000 -1500000 (net {NC-2} )
+    (type protect))
+   )
+   (Net {NC-3} 
+   (via PS3 -4500000 -1250000 (net {NC-3} )
+    (type protect))
+   )
+   (Net {NC-4} 
+   (via PS3 -4500000 -1000000 (net {NC-4} )
+    (type protect))
+   )
+   (Net {NC-5} 
+   (via PS3 -4500000 -750000 (net {NC-5} )
+    (type protect))
+   )
+   (Net {NC-6} 
+   (via PS3 -8500000 2000000 (net {NC-6} )
+    (type protect))
+   )
+   (Net {NC-7} 
+   (via PS3 -8250000 2000000 (net {NC-7} )
+    (type protect))
+   )
+   (Net {NC-8} 
+   (via PS3 -8000000 2000000 (net {NC-8} )
+    (type protect))
+   )
+   (Net {NC-9} 
+   (via PS3 -7750000 2000000 (net {NC-9} )
+    (type protect))
+   )
+  )
+ )
